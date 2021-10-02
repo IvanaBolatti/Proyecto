@@ -46,6 +46,15 @@
     margin-top: 0px;
     margin-bottom: 5%px;   
 }
+.pDescrip{
+    font-style: italic;
+    font-weight: 300;
+    color: rgb(33, 34, 41);
+    font-size: 3vw;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 5%px;   
+}
 .colorUsuario {
     color: rgb(72, 80, 90);
     font-size:2vw;
@@ -75,25 +84,39 @@
     height: 120px;
     width: 200px;
 }
-/*--------------Foto portada--------------------*/
-.fotoPortada{
-    height: 350px;
+/*--------------Quiénes somos--------------------*/
+
+.quienesFoto{
+    height: 450px;
     width: auto;
     max-height: 100%;
-    background-image:url("Beer1.jpg");
-    background-repeat:repeat;
-    background-position:center;
-    background-size: contain; 
-}
-.fotoQuienes{
-    height: 350px;
-    width: auto;
-    max-height: 100%;
-    background-image:url("como.jpg");
+    background-image:url("empresario.jpg");
     background-repeat:no-repeat;
-    background-position:center;
+    background-position:right;
+    opacity:0.5;
     background-size: contain; 
 }
+.quienesDescripción{
+    text-align: left;
+}
+.quienes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.quienesIzquierdo{
+    width: 350px;
+    height: 480px;
+}
+.quienesDerecha{
+    width: 350px;
+    height: 480px;
+}
+
+/*--------------Galería--------------------*/
+
 .card {
 width: 350px;
 height: 480px;
@@ -112,7 +135,9 @@ img{
 /*--------------Imágenes carrusel-------------*/
 .imgCarru{
     max-width: 100%;  
-    height: 640px;
+    width: 1000px;
+    height: 540px;
+    margin-left: 11%;
 }
 
 /*---------------Galería de combos---------------*/
@@ -204,8 +229,10 @@ select:focus{
 @media only screen and (max-width: 600px) 
     {
         .header
-        {height: 100px;
+        {height: 120px;
+        width:600px;
         }
+
        .ul {  
         display: flex;
         flex-direction: column;
@@ -214,13 +241,19 @@ select:focus{
         list-style-type: none;
         
         }
-        .p {
-            font-size: 1.5vw;
-            }
         .main {
             height: 900px;
         }
-
+        .p {
+            font-size: 1.5vw;
+            }
+            .pDescrip{
+                
+              
+                font-size: 1.5vw;
+                text-align: justify;
+            }
+        
         #combos{
            height:800px;
            width: auto;
@@ -232,7 +265,15 @@ select:focus{
            padding:1em;
            background-color:#979b98;
        }
+       .quienes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+    }
+    
        .footer{
            height:100px;
+           width: 600px;
        }
     }

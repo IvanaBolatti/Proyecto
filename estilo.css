@@ -57,7 +57,7 @@
 }
 .colorUsuario {
     color: rgb(72, 80, 90);
-    font-size:2vw;
+    font-size:1.5vw;
 }
 #h1 {
     font-family:'Marcador permanente', cursiva; 
@@ -71,7 +71,7 @@
 }
 
 .logoGrande{
-    background-image:url("irlish.jpeg");
+    background-image:url("imágenes/irlish.png");
     height: 450px;
     max-width: 100%;
     background-repeat:no-repeat;
@@ -83,7 +83,7 @@
     height: 7vw;
     width: 7vw;
     position:absolute;
-    background-image:url("irlish.jpeg");
+    background-image:url("imágenes/irlish.png");
     background-repeat:no-repeat;
     background-position:left;
     background-size: contain;
@@ -99,7 +99,7 @@
     height: 450px;
     width: auto;
     max-height: 100%;
-    background-image:url("empresario.jpg");
+    background-image:url("imágenes/empresario.png");
     background-repeat:no-repeat;
     background-position:right;
     opacity:0.5;
